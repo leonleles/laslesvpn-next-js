@@ -271,12 +271,12 @@ const Index = () => {
                 scrollbar={{ draggable: true }}
               >
                 {rates.map(slide => (
-                  <SwiperSlide>
+                  <SwiperSlide key={slide.name}>
                     <Comment rate={slide} />
                   </SwiperSlide>
                 ))}
                 {rates.map(slide => (
-                  <SwiperSlide>
+                  <SwiperSlide key={slide.name}>
                     <Comment rate={slide} />
                   </SwiperSlide>
                 ))}
